@@ -23,16 +23,20 @@
         <form id="todo-form" class="todo-form">
           <label class="sr-only" for="todo-input">New task</label>
           <input id="todo-input" name="title" maxlength="120" placeholder="What needs your attention?" required autocomplete="off" />
+          <label class="sr-only" for="due-date-input">Optional due date</label>
+          <input id="due-date-input" name="dueDate" type="date" aria-label="Optional due date" />
           <button type="submit">Add task</button>
         </form>
         <div class="list-bar">
           <button class="filter is-active" type="button" data-filter="all">All</button>
           <button class="filter" type="button" data-filter="active">Active</button>
           <button class="filter" type="button" data-filter="completed">Done</button>
+          <button class="filter" type="button" data-filter="overdue">Overdue</button>
           <button id="clear-completed" class="text-button" type="button">Clear completed</button>
         </div>
         <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
         <p id="empty-state" class="empty-state">Your list is clear. Add one meaningful task.</p>
+        <p id="storage-error" class="storage-error" role="alert" hidden></p>
       </section>
     </main>
     <script type="module" src="src/app.js"></script>
