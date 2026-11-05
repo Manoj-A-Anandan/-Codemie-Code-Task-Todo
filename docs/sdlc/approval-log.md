@@ -28,4 +28,4 @@
 
 | Phase | Decision Needed | Status |
 |---|---|---|
-| Pull request | Awaiting creation on GitHub | In progress |
+| Pull request | Created | https://github.com/Manoj-A-Anandan/-Codemie-Code-Task-Todo/pull/1 |
