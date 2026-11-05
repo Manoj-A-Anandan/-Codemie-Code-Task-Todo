@@ -1,7 +1,4 @@
-.github/agents/
 .github/hooks/
-.github/instructions/
-.github/copilot-instructions.md
 .codemie/
 node_modules/
 coverage/
